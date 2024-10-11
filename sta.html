@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="view-port" content="width-device-width,initial scale=1.0">
+        <title>staines website</title>
+        <style>
+            body{
+                font-family:arial,sans-serif;
+                background-color:blue;
+                padding:30px;
+            }
+            h1
+            {
+                text-align:center;
+                color:#33;
+            }
+            form
+            {
+             background-color:red;
+             border: 1px solid #ccc;
+             border-radius:25px;
+             max-width:450px;
+             margin:auto;
+             box-shadow:0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            label
+            {
+                display:block;
+            margin-bottom:5px;
+            color:white;   
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="password"]
+            {
+                 width: 100%; /* Full width of the input fields */
+            padding: 10px; /* Adds padding inside the input fields */
+            margin-bottom: 15px; /* Adds space below the input fields */
+            border: 1px solid #ccc; /* Light gray border around the input fields */
+            border-radius: 3px; /* Slightly rounded corners for the input fields */
+            box-sizing: border-box; 
+            }
+             input[type="submit"] {
+            background-color: #28a745; /* Green background color for the submit button */
+            color: white; /* White text color for the submit button */
+            border: none; /* No border for the submit button */
+            padding: 10px; /* Adds padding inside the button */
+            border-radius: 3px; /* Slightly rounded corners for the button */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+            font-size: 16px; /* Increases font size for the button */
+            width: 100%; /* Full width of the button */
+            transition: background-color 0.3s; }
+              input[type="submit"]:hover 
+              {
+            background-color: #218838; /* Darker green on hover */
+        }
+            
+        </style>
+     </head>
+    <body>
+        <h1>Staines First Webpage</h1>
+        <form action="/submit" method="post">
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for "email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="submit">
+        </form>
+          </body>
+          </html>
